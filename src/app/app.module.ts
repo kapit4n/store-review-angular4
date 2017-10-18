@@ -10,7 +10,7 @@ const routes: Routes = [
     {
         path: 'stock-item',
         component: StockItemComponent,
-    },{
+    }, {
         path: '',
         component: HomeComponent,
     },
