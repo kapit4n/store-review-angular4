@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpModule } from '@angular/http';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatButtonModule, MatCheckboxModule, MatTableModule} from '@angular/material';
 
 import { StockServiceService } from './stock-service.service'
 import { AppComponent } from './app.component';
@@ -27,7 +29,9 @@ const routes: Routes = [
   imports: [
     HttpModule,
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    BrowserAnimationsModule,
+    MatButtonModule, MatCheckboxModule, MatTableModule
   ],
   providers: [StockServiceService],
   bootstrap: [AppComponent]
