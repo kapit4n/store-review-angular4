@@ -24,19 +24,3 @@
   <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
   <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
 </mat-table>
-<table width="80%">
-  <thead>
-    <tr>
-      <td style="font-weight: bold;">Name</td>
-      <td style="font-weight: bold;">Quantity</td>
-      <td style="font-weight: bold;">$$$</td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let stock of stocks">
-      <td><a routerLink="stock-item">{{stock.name}}</a></td>
-      <td>{{stock.inStock}}</td>
-      <td>{{stock.price * stock.inStock}}</td>
-    </tr>
-  </tbody>
-</table>
