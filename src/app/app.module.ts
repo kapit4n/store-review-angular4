@@ -13,7 +13,7 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {
-    path: 'stock-item',
+    path: 'stock-item/:id',
     component: StockItemComponent,
   }, {
     path: '',

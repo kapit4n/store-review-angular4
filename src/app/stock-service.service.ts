@@ -15,10 +15,17 @@ export class StockServiceService {
 
 	constructor(private http: Http) { }
 	private stocksUrl = 'http://localhost:3000/api/products/getstock';
+	private stockByIdUrl = 'http://localhost:3000/api/products';
 
 	getStock(): Observable<Stock[]> {
 		return this.http.get(this.stocksUrl)
 			.map((res: Response) => res.json().stocks)
+			.catch((error: any) => Observable.throw(error.json().error || 'Server error'));
+	}
+
+	getStockById(id: any): Observable<Stock> {
+		return this.http.get(this.stockByIdUrl + "/" + id)
+			.map((res: Response) => res.json())
 			.catch((error: any) => Observable.throw(error.json().error || 'Server error'));
 	}
 

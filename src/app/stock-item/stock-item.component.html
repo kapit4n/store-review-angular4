@@ -2,25 +2,25 @@
   <tbody>
     <tr>
       <td>Code</td>
-      <td><a routerLink="stock-item">00001</a></td>
+      <td><a routerLink="stock-item">{{data.id}}</a></td>
     </tr>
     <tr>
       <td>Name</td>
-      <td>TV</td>
+      <td>{{data.name}}</td>
     </tr>
     <tr>
       <td>In Stock</td>
-      <td>101</td>
+      <td>{{data.stock}}</td>
     </tr>
     <tr>
       <td>Image</td>
       <td>
-        <img src="http://www.lg.com/us/images/tvs/md05791090/thumb-350x350c.jpg" alt="" />
+        <img src="{{data.img}}" alt="" />
       </td>
     </tr>
     <tr>
       <td>Description</td>
-      <td>Description is the pattern of development that presents a word picture of a thing, a person, a situation, or a series of events. It is one of four rhetorical modes (also known as modes of discourse), along with exposition, argumentation, and narration. Each of the rhetorical modes is present in a variety of forms and each has its own purpose and conventions. The act of description may be related to that of definition. Description is also the fiction-writing mode for transmitting a mental image of the particulars of a story</td>
+      <td>{{data.description}}</td>
     </tr>
   </tbody>
 </table>
