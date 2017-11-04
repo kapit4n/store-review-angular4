@@ -4,12 +4,12 @@
   <!-- Name Column -->
   <ng-container matColumnDef="name">
     <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
-    <mat-cell *matCellDef="let row"> <a routerLink="stock-item">{{row.name}}</a> </mat-cell>
+    <mat-cell *matCellDef="let row"> <a routerLink="stock-item/{{row.id}}">{{row.name}}</a> </mat-cell>
   </ng-container>
   <!-- ID Column -->
   <ng-container matColumnDef="inStock">
     <mat-header-cell *matHeaderCellDef> In Stock </mat-header-cell>
-    <mat-cell *matCellDef="let row"> {{row.inStock}} </mat-cell>
+    <mat-cell *matCellDef="let row"> {{row.stock}} </mat-cell>
   </ng-container>
   <!-- Name Column -->
   <ng-container matColumnDef="price">
