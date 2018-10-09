@@ -1,10 +1,7 @@
 # StockCheck
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.5.
-
-## Mockups
-![Check](https://github.com/kapit4n/store-review-angular4/raw/master/mockups/stock_check_item.png
-)
+Store review.
+<img src="https://github.com/kapit4n/store-review-angular4/raw/master/mockups/stock_check_item.png" width="100%"/>
 
 ## Development server
 
